@@ -1,0 +1,18 @@
+define(['text!./mainHeader.html','../../config/config', '../../controllers/requestController','../addItem/addItem' ], function ( view, config, request, addItem) {
+ var source   = $(view).html(),
+        template = Handlebars.compile(source),
+        html = template(),
+        render,
+        addItem;
+        render = function () {
+            $('#main-container').html(html);
+        };
+        showAddItem = function () {
+            addItem.render();
+        }
+        $('#add-item').on('click', showAddItem);
+        return {
+            render:render
+        }
+            
+});

@@ -1,0 +1,6 @@
+define(['text!./launch.html','../../config/config', '../../controllers/requestController' ], function ( view, config, request) {
+ var source   = $(view).html(),
+        template = Handlebars.compile(source);
+        var html = template();
+            $('#main-container').html(html);
+});

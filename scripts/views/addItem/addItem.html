@@ -1,0 +1,84 @@
+
+<script id="entry-template" type="text/x-handlebars-template">
+<!-- Modal HTML -->
+<div id="model-add-item" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class='modal-head'>
+                    <h4 class="modal-title">Add Item</h4>
+                </div>
+                <div class='modal-pic'>
+                </div>
+            </div>
+            <div class="modal-body">
+               <div class="container col-md-12">
+                   <div class="form-group">
+                      <div class="wrap">
+                          <label for="title">Title:</label>
+                          <input type="text" class="form-control" id="title">
+                      </div>
+                      <div class="wrap">
+                          <label for="description">Description:</label>
+                          <textarea class="form-control" rows="5" id="description"></textarea>
+                      </div>
+                      <div class='left-col col-lg-6 wrap'>
+                          <label for="price">Price:</label>
+                          <input type="text" class="form-control" id="price">
+                      </div>
+                        <div class='right-col col-lg-6 wrap'>
+                                <label for="stock">Stock:</label>
+                                <input type="text" class="form-control" id="stock">
+                        </div>
+                        <div class='left-col col-lg-4 wrap'>
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="item-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span class='item-type-name type-name'>Item Type</span>
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" id='item-type-drop-down' aria-labelledby="item-type-drop-down">
+                                <li>Dress</li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class='left-col col-lg-4 wrap'>
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dress-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span class='dress-type-name type-name'>Dress Type</span>
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" id='dress-type-drop-down' aria-labelledby="dress-type-drop-down">
+                                <li>Churidar</li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class='left-col col-lg-4 wrap'>
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="material_type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span class='material-type-name type-name'>Material Type</span>
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" id='material_type-drop-down' aria-labelledby="material_type-drop-down">
+                                <li>Cotton</li>
+                              </ul>
+                            </div>
+                        </div>
+                        <div class='left-col col-lg-6 wrap'>
+                            <label class="men"><input id ="men" type="radio" class='gender-type' name="gender-type">Men</label>
+                            <label class="women"><input id ="women" type="radio" class='gender-type' checked="checked" name="gender-type">Women</label>
+                        </div>
+                        <div class='left-col col-lg-6 wrap'>
+                            <span class="btn btn-default btn-file item-img-wrapper">
+                                Browse <input type="file" id="item-image" multiple>
+                            </span>
+                        </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id = 'btn-add-item' class="btn btn-primary">Add Item</button>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
