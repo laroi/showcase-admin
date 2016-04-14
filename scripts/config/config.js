@@ -2,7 +2,7 @@ define([], function () {
     var config = {
             couchdb:{
                 protocol:'http',
-                host: 'admin.ginza.com',
+                host: window.location.host,
                 port: 80,
                 proxy: 'data',
                 url: function (){
